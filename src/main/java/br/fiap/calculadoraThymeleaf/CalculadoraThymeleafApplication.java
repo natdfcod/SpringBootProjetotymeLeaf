@@ -1,13 +1,13 @@
-package br.fiap.calculadora;
+package br.fiap.calculadoraThymeleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CalculadoraApplication {
+public class CalculadoraThymeleafApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CalculadoraApplication.class, args);
+		SpringApplication.run(CalculadoraThymeleafApplication.class, args);
 	}
 
 }

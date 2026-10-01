@@ -6,12 +6,12 @@
 </head>
 <body>
     <h1>Calculadora</h1>
-    <form th:action="" method="">
+    <form th:action="@{/calculadora/calcular}" method="get">
         <label>Número 1:
           <input type="number" name="a" th:value="${a}">
         </label>
         <label>Número 2:
-          <input type="number" name="a" th:value="${b}">
+          <input type="number" name="b" th:value="${b}">
         </label>
         <select name="operacao">
           <option value="somar">Somar</option>
@@ -19,7 +19,8 @@
           <option value="multiplicar">Multiplicar</option>
           <option value="dividir">Dividir</option>
         </select>
-        <button type="submit"></button>
+        <button type="submit">Calcular</button>
+        <p th:if="${resultado != null}" th:text="${resultado}"></p>
     </form>
 </body>
 </html>
